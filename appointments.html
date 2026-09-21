@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointments | Hospital Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <h1>Hospital Management</h1>
+        <div class="topbar-right"><span>Admin</span><div class="avatar">A</div></div>
+      </header>
+      <nav class="menu">
+        <a href="DashBoard.html">Dashboard</a>
+        <a href="patients.html">Patients</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html" class="active">Appointments</a>
+        <a href="billing.html">Billing</a>
+      </nav>
+      <main>
+        <div class="page-heading">
+          <div><h2>Appointments</h2><p>Keep track of today's visits and care teams.</p></div>
+          <a class="button" href="new-appointment.html">+ New appointment</a>
+        </div>
+        <section class="panel table-panel">
+          <table class="data-table">
+            <thead><tr><th>Time</th><th>Patient</th><th>Doctor</th><th>Department</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>9:00 AM</td><td>John Doe</td><td>Dr. Sarah Wilson</td><td>Cardiology</td><td><span class="status">Confirmed</span></td></tr>
+              <tr><td>10:30 AM</td><td>Emma Smith</td><td>Dr. James Carter</td><td>Neurology</td><td><span class="status">Confirmed</span></td></tr>
+              <tr><td>12:00 PM</td><td>Mike Ross</td><td>Dr. Michael Brown</td><td>Orthopedic</td><td><span class="status pending">Waiting</span></td></tr>
+              <tr><td>2:15 PM</td><td>Anna Lee</td><td>Dr. Priya Shah</td><td>Pediatrics</td><td><span class="status">Confirmed</span></td></tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

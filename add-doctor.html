@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Doctor | Hospital Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar"><h1>Hospital Management</h1><div class="topbar-right"><span>Admin</span><div class="avatar">A</div></div></header>
+      <nav class="menu"><a href="DashBoard.html">Dashboard</a><a href="patients.html">Patients</a><a href="doctors.html" class="active">Doctors</a><a href="appointments.html">Appointments</a><a href="billing.html">Billing</a></nav>
+      <main>
+        <div class="page-heading"><div><h2>Add Doctor</h2><p>Add a member to the hospital medical team.</p></div><a class="button secondary-button" href="doctors.html">Back to doctors</a></div>
+        <form class="invoice-form" action="doctors.html" method="get">
+          <section class="panel form-section">
+            <h3>Doctor details</h3>
+            <div class="form-grid">
+              <label>First name<input type="text" name="first-name" required /></label>
+              <label>Last name<input type="text" name="last-name" required /></label>
+              <label>Specialty<select name="specialty" required><option value="">Select specialty</option><option>Cardiology</option><option>Neurology</option><option>Pediatrics</option><option>Orthopedic</option></select></label>
+              <label>Years of experience<input type="number" name="experience" min="0" required /></label>
+              <label>Phone number<input type="tel" name="phone" required /></label>
+              <label>Email address<input type="email" name="email" required /></label>
+            </div>
+            <label class="notes-field">Professional notes<textarea name="notes" rows="3" placeholder="Add credentials or availability notes"></textarea></label>
+          </section>
+          <div class="form-actions"><a class="button secondary-button" href="doctors.html">Cancel</a><button class="button" type="submit">Add doctor</button></div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

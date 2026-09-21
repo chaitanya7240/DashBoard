@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctors | Hospital Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <h1>Hospital Management</h1>
+        <div class="topbar-right"><span>Admin</span><div class="avatar">A</div></div>
+      </header>
+      <nav class="menu">
+        <a href="DashBoard.html">Dashboard</a>
+        <a href="patients.html">Patients</a>
+        <a href="doctors.html" class="active">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="billing.html">Billing</a>
+      </nav>
+      <main>
+        <div class="page-heading">
+          <div><h2>Doctors</h2><p>View your medical team and their departments.</p></div>
+          <a class="button" href="add-doctor.html">+ Add doctor</a>
+        </div>
+        <section class="panel table-panel">
+          <table class="data-table">
+            <thead><tr><th>Doctor</th><th>Specialty</th><th>Experience</th><th>Today</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Dr. Sarah Wilson</td><td>Cardiology</td><td>12 years</td><td>8 appointments</td><td><span class="status">Available</span></td></tr>
+              <tr><td>Dr. James Carter</td><td>Neurology</td><td>9 years</td><td>6 appointments</td><td><span class="status">Available</span></td></tr>
+              <tr><td>Dr. Priya Shah</td><td>Pediatrics</td><td>7 years</td><td>4 appointments</td><td><span class="status pending">In surgery</span></td></tr>
+              <tr><td>Dr. Michael Brown</td><td>Orthopedic</td><td>15 years</td><td>7 appointments</td><td><span class="status">Available</span></td></tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

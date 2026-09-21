@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Appointment | Hospital Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar"><h1>Hospital Management</h1><div class="topbar-right"><span>Admin</span><div class="avatar">A</div></div></header>
+      <nav class="menu"><a href="DashBoard.html">Dashboard</a><a href="patients.html">Patients</a><a href="doctors.html">Doctors</a><a href="appointments.html" class="active">Appointments</a><a href="billing.html">Billing</a></nav>
+      <main>
+        <div class="page-heading"><div><h2>New Appointment</h2><p>Schedule a visit for a patient.</p></div><a class="button secondary-button" href="appointments.html">Back to appointments</a></div>
+        <form class="invoice-form" action="appointments.html" method="get">
+          <section class="panel form-section">
+            <h3>Appointment details</h3>
+            <div class="form-grid">
+              <label>Patient<select name="patient" required><option value="">Select patient</option><option>John Doe</option><option>Emma Smith</option><option>Mike Ross</option><option>Anna Lee</option></select></label>
+              <label>Doctor<select name="doctor" required><option value="">Select doctor</option><option>Dr. Sarah Wilson</option><option>Dr. James Carter</option><option>Dr. Priya Shah</option><option>Dr. Michael Brown</option></select></label>
+              <label>Date<input type="date" name="date" required /></label>
+              <label>Time<input type="time" name="time" required /></label>
+              <label>Department<select name="department" required><option value="">Select department</option><option>Cardiology</option><option>Neurology</option><option>Pediatrics</option><option>Orthopedic</option></select></label>
+              <label>Visit type<select name="visit-type"><option>Consultation</option><option>Follow-up</option><option>Routine check-up</option></select></label>
+            </div>
+            <label class="notes-field">Reason for visit<textarea name="reason" rows="3" placeholder="Describe the reason for this appointment"></textarea></label>
+          </section>
+          <div class="form-actions"><a class="button secondary-button" href="appointments.html">Cancel</a><button class="button" type="submit">Create appointment</button></div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
