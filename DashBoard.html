@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hospital Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="topbar">
-        <div>
-          <h1>Hospital Management</h1>
-        </div>
-        <div class="topbar-right">
-          <span>Admin</span>
-          <div class="avatar">A</div>
-        </div>
-      </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard | CarePoint Hospital</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="topbar">
+				<div><h1>CarePoint Hospital</h1></div>
+				<div class="topbar-right"><span>Admin</span><div class="avatar">A</div></div>
+			</header>
 
-      <nav class="menu">
-        <a href="index.html" class="active">Dashboard</a>
-        <a href="patients.html">Patients</a>
-        <a href="doctors.html">Doctors</a>
-        <a href="appointments.html">Appointments</a>
-        <a href="billing.html">Billing</a>
-      </nav>
+			<nav class="menu">
+				<a href="index.html" target="_blank">Home</a>
+				<a href="dashboard.html" class="active">Dashboard</a>
+				<a href="patients.html" target="_blank">Patients</a>
+				<a href="doctors.html" target="_blank">Doctors</a>
+				<a href="appointments.html" target="_blank">Appointments</a>
+				<a href="billing.html" target="_blank">Billing</a>
+			</nav>
 
-      <section class="cards">
-        <div class="card">
-          <h3>Patients</h3>
-          <p>1250</p>
-        </div>
-        <div class="card">
-          <h3>Doctors</h3>
-          <p>48</p>
-        </div>
-        <div class="card">
-          <h3>Appointments</h3>
-          <p>320</p>
-        </div>
-        <div class="card">
-          <h3>Revenue</h3>
-          <p>$24k</p>
-        </div>
-      </section>
+			<main>
+				<div class="page-heading">
+					<div><h2>Hospital overview</h2><p>Monitor today’s activity and key hospital figures.</p></div>
+					<a class="button" href="new-appointment.html">+ New appointment</a>
+				</div>
 
-      <section class="content">
-        <div class="panel">
-          <h3>Today's Appointments</h3>
-          <ul>
-            <li><span>John Doe</span> <span>9:00 AM</span></li>
-            <li><span>Emma Smith</span> <span>10:30 AM</span></li>
-            <li><span>Mike Ross</span> <span>12:00 PM</span></li>
-            <li><span>Anna Lee</span> <span>2:15 PM</span></li>
-          </ul>
-        </div>
+				<section class="cards">
+					<div class="card"><h3>Patients</h3><p>1,250</p></div>
+					<div class="card"><h3>Doctors</h3><p>48</p></div>
+					<div class="card"><h3>Appointments</h3><p>320</p></div>
+					<div class="card"><h3>Revenue</h3><p>$24k</p></div>
+				</section>
 
-        <div class="panel">
-          <h3>Department Summary</h3>
-          <ul>
-            <li>Cardiology - 26</li>
-            <li>Neurology - 18</li>
-            <li>Pediatrics - 22</li>
-            <li>Orthopedic - 15</li>
-          </ul>
-        </div>
-      </section>
-    </div>
-  </body>
+				<section class="content">
+					<div class="panel">
+						<h3>Today's appointments</h3>
+						<ul>
+							<li><span>John Doe</span><span>9:00 AM</span></li>
+							<li><span>Emma Smith</span><span>10:30 AM</span></li>
+							<li><span>Mike Ross</span><span>12:00 PM</span></li>
+							<li><span>Anna Lee</span><span>2:15 PM</span></li>
+						</ul>
+					</div>
+					<div class="panel">
+						<h3>Department summary</h3>
+						<ul>
+							<li>Cardiology - 26</li>
+							<li>Neurology - 18</li>
+							<li>Pediatrics - 22</li>
+							<li>Orthopedic - 15</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
 </html>

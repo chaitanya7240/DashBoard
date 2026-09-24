@@ -3,56 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hospital Dashboard</title>
+    <title>Welcome | CarePoint Hospital</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container home-container">
       <header class="topbar">
         <div>
-          <h1>Hospital Management</h1>
+          <h1>CarePoint Hospital</h1>
         </div>
         <div class="topbar-right">
-          <span>Admin</span>
-          <div class="avatar">A</div>
+          <span>Patient-first care</span>
+          <div class="avatar">+</div>
         </div>
       </header>
 
       <nav class="menu">
-        <a href="index.html" class="active">Dashboard</a>
-        <a href="patients.html">Patients</a>
-        <a href="doctors.html">Doctors</a>
-        <a href="appointments.html">Appointments</a>
-        <a href="billing.html">Billing</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="dashboard.html" target="_blank">Dashboard</a>
+        <a href="patients.html" target="_blank">Patients</a>
+        <a href="doctors.html" target="_blank">Doctors</a>
+        <a href="appointments.html" target="_blank">Appointments</a>
+        <a href="billing.html" target="_blank">Billing</a>
       </nav>
 
-      <section class="cards">
-        <div class="card"><h3>Patients</h3><p>1250</p></div>
-        <div class="card"><h3>Doctors</h3><p>48</p></div>
-        <div class="card"><h3>Appointments</h3><p>320</p></div>
-        <div class="card"><h3>Revenue</h3><p>$24k</p></div>
-      </section>
+      <main>
+        <section class="home-hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Compassionate care, close to home</p>
+            <h2>Better health starts with the right team.</h2>
+            <p>CarePoint Hospital brings experienced specialists, modern treatment, and thoughtful support together in one welcoming place.</p>
+            <div class="hero-actions">
+              <a class="button" href="new-appointment.html">Book an appointment</a>
+              <a class="button secondary-button" href="doctors.html">Meet our doctors</a>
+            </div>
+          </div>
+          <div class="hero-note"><span class="hero-mark">+</span><p>Here when your health matters most</p><strong>24/7 emergency support</strong></div>
+        </section>
 
-      <section class="content">
-        <div class="panel">
-          <h3>Today's Appointments</h3>
-          <ul>
-            <li><span>John Doe</span><span>9:00 AM</span></li>
-            <li><span>Emma Smith</span><span>10:30 AM</span></li>
-            <li><span>Mike Ross</span><span>12:00 PM</span></li>
-            <li><span>Anna Lee</span><span>2:15 PM</span></li>
-          </ul>
-        </div>
-        <div class="panel">
-          <h3>Department Summary</h3>
-          <ul>
-            <li>Cardiology - 26</li>
-            <li>Neurology - 18</li>
-            <li>Pediatrics - 22</li>
-            <li>Orthopedic - 15</li>
-          </ul>
-        </div>
-      </section>
+        <section class="home-section" id="about">
+          <div class="section-intro">
+            <p class="eyebrow">About CarePoint</p>
+            <h2>A hospital built around people.</h2>
+            <p>Our teams work across departments to make every visit clearer, kinder, and more connected. From routine checkups to complex care, we stay focused on the person behind the appointment.</p>
+          </div>
+          <div class="home-values">
+            <article class="value-card"><span>01</span><h3>Expert care</h3><p>Skilled physicians and nurses who listen first and treat with purpose.</p></article>
+            <article class="value-card"><span>02</span><h3>Modern medicine</h3><p>Reliable technology and evidence-based treatment for better outcomes.</p></article>
+            <article class="value-card"><span>03</span><h3>Human connection</h3><p>Clear communication and support for patients and families at every step.</p></article>
+          </div>
+        </section>
+
+        <section class="home-contact">
+          <div><p class="eyebrow">Need help today?</p><h2>Let's find the right care for you.</h2></div>
+          <div class="contact-details"><p><strong>Call us</strong><br />+1 (555) 014-2024</p><p><strong>Visit us</strong><br />24 CarePoint Avenue</p></div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
