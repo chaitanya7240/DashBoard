@@ -3,49 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome | CarePoint Hospital</title>
+    <title>CareConnect | Healthcare, connected</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container home-container">
       <header class="topbar">
-        <div>
-          <h1>CarePoint Hospital</h1>
-        </div>
-        <div class="topbar-right">
-          <span>Patient-first care</span>
-          <div class="avatar">+</div>
-        </div>
+        <h1>CareConnect</h1>
+        <div class="topbar-right"><span>24/7 Emergency: 040 6700 000</span><button class="login-button" type="button">Log in</button><div class="avatar">+</div></div>
       </header>
 
       <nav class="menu">
         <a href="index.html" class="active">Home</a>
-        <a href="dashBoard.html" target="_blank">Dashboard</a>
-        <a href="patients.html" target="_blank">Patients</a>
-        <a href="doctors.html" target="_blank">Doctors</a>
-        <a href="appointments.html" target="_blank">Appointments</a>
-        <a href="billing.html" target="_blank">Billing</a>
+        <div class="menu-dropdown">
+          <button class="menu-trigger" type="button">Departments &#9662;</button>
+          <div class="menu-panel"><span>Department List</span><span>Department Details</span></div>
+        </div>
+        <div class="menu-dropdown">
+          <button class="menu-trigger" type="button">Find a Doctor &#9662;</button>
+          <div class="menu-panel mega">
+            <p class="menu-panel-title">Popular specialties</p>
+            <span>Cardiology</span><span>Neurology</span><span>Critical Care</span>
+            <span>Pediatrics</span><span>Orthopedic Care</span><span>General Physician</span>
+          </div>
+        </div>
+        <div class="menu-dropdown">
+          <button class="menu-trigger" type="button">Appointments &#9662;</button>
+          <div class="menu-panel"><span>View Appointments</span><span>Book Appointment</span></div>
+        </div>
       </nav>
 
       <main>
         <section class="home-hero">
           <div class="hero-copy">
-            <p class="eyebrow">Compassionate care, close to home</p>
-            <h2>Better health starts with the right team.</h2>
-            <p>CarePoint Hospital brings experienced specialists, modern treatment, and thoughtful support together in one welcoming place.</p>
+            <p class="eyebrow">Trusted by 50,000+ patients</p>
+            <h2>Healthcare,<br />connected.</h2>
+            <p>A smarter way to connect patients, doctors, and hospital teams in one secure platform.</p>
+            <p>Advanced Endocrinology &nbsp; | &nbsp; 24/7 Emergency Care &nbsp; | &nbsp; Expert Medical Team</p>
             <div class="hero-actions">
-              <a class="button" href="new-appointment.html">Book an appointment</a>
-              <a class="button secondary-button" href="doctors.html">Meet our doctors</a>
+              <a class="button secondary-button" href="tel:0406700000">Call 040 6700 000 &rarr;</a>
             </div>
           </div>
-          <div class="hero-note"><span class="hero-mark">+</span><p>Here when your health matters most</p><strong>24/7 emergency support</strong></div>
+          <form class="hero-note enquiry-form" action="#" method="get">
+            <h3>Enquire Now</h3>
+            <input type="text" name="name" placeholder="Name" aria-label="Name" required />
+            <input type="email" name="email" placeholder="Email" aria-label="Email" required />
+            <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number" required />
+            <textarea name="message" rows="2" placeholder="Health Concern / Message" aria-label="Health Concern / Message"></textarea>
+            <button class="button" type="submit">Schedule Appointment &rarr;</button>
+          </form>
         </section>
 
         <section class="home-section" id="about">
           <div class="section-intro">
-            <p class="eyebrow">About CarePoint</p>
-            <h2>A hospital built around people.</h2>
-            <p>Our teams work across departments to make every visit clearer, kinder, and more connected. From routine checkups to complex care, we stay focused on the person behind the appointment.</p>
+            <p class="eyebrow">Our expertise</p>
+            <h2>Best Critical Care Medicine Hospital in Hyderabad</h2>
+            <p>Our department of critical care brings specialist teams, monitoring, and diagnostic technology together to stabilize patients and support recovery through complex treatment.</p>
           </div>
           <div class="home-values">
             <article class="value-card"><span>01</span><h3>Expert care</h3><p>Skilled physicians and nurses who listen first and treat with purpose.</p></article>
@@ -56,7 +69,7 @@
 
         <section class="home-contact">
           <div><p class="eyebrow">Need help today?</p><h2>Let's find the right care for you.</h2></div>
-          <div class="contact-details"><p><strong>Call us</strong><br />+1 (555) 014-2024</p><p><strong>Visit us</strong><br />24 CarePoint Avenue</p></div>
+          <div class="contact-details"><p><strong>Call us</strong><br />+1 (555) 014-2024</p><p><strong>Visit us</strong><br />24 CareConnect Avenue</p></div>
         </section>
       </main>
     </div>
